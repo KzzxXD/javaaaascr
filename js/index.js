@@ -5,7 +5,10 @@ function solveQuadratic(a, b, c) {
     let x1, x2;
     let discr = calcDiscr(a, b, c);
     if (discr < 0){
-        return 'No roots';
+        result = 'No roots'
+        result1 = 'No roots';
+        return result;
+        return result1;
     }else if(discr > 0)
     result = x1 = (-b - Math.sqrt(calcDiscr(a, b, c)))/(2*a);
     result1 = x2 = (-b + Math.sqrt(calcDiscr(a, b, c)))/(2*a);
